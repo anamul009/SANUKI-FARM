@@ -5,15 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SANUKI FARM</title>
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-
-  <!-- fontawesome CDN -->
   <script src="https://kit.fontawesome.com/62af192729.js" crossorigin="anonymous"></script>
-  <!-- Tailwind and Daisy ui CDN -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- google fonts -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,17 +36,14 @@
 
       <div class="navbar absolute top-0 z-20 bg-transparent text-white/80">
         <div class="navbar-start">
-
           <label for="menu-toggle" class="btn btn-ghost lg:hidden text-orange-200">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </label>
-
           <a class="btn btn-ghost text-2xl font-cormorant text-orange-200">SANUKI FARM</a>
         </div>
-
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1 text-sm tracking-widest text-orange-200">
             <li><a class="hover:underline decoration-2 underline-offset-4 hover:decoration-[#E5CBA0]">HOME</a></li>
@@ -69,35 +61,28 @@
       </div>
 
       <div class="relative z-10 grid w-full max-w-7xl grid-cols-1 items-center gap-12 px-8 lg:grid-cols-2">
-
-        <div class="text-left text-white">
-          <p class="mb-4 text-lg">贅沢な一粒をどうぞ。</p>
-          <h1 class="font-cormorant mb-6 text-7xl font-bold md:text-8xl text-orange-200">シャインマスカット</h1>
-          <p class="mb-10 max-w-lg leading-relaxed">
+        <div class="text-left text-white transition-opacity duration-500 ease-in-out" id="product-text-container">
+          <p class="mb-4 text-lg" id="product-pretitle">贅沢な一粒をどうぞ。</p>
+          <h1 class="font-cormorant mb-6 text-7xl font-bold md:text-8xl text-orange-200" id="product-name">シャインマスカット</h1>
+          <p class="mb-10 max-w-lg leading-relaxed" id="product-description">
             果汁たっぷりで濃厚な甘さが特徴です。 一粒食べれば口いっぱいに広がる芳醇な香りとジューシーな味わい。
           </p>
           <div class="flex flex-wrap gap-4">
-            <button class="btn btn-outline border-orange-200 text-white hover:bg-orange-200 hover:text-green-900">ORDER
-              NOW</button>
-            <button class="btn btn-outline border-orange-200 text-white hover:bg-orange-200 hover:text-green-900">MORE
-              INFO</button>
+            <button class="btn btn-outline border-orange-200 text-white hover:bg-orange-200 hover:text-green-900">ORDER NOW</button>
+            <button class="btn btn-outline border-orange-200 text-white hover:bg-orange-200 hover:text-green-900">MORE INFO</button>
           </div>
         </div>
-
-        <div class="hidden items-center justify-center lg:flex">
-          <img src="img/img (2).png" alt="A bunch of Shine Muscat grapes" class="w-full" />
+        <div class="hidden items-center justify-center lg:flex transition-opacity duration-500 ease-in-out" id="product-image-container">
+          <img src="img/img (2).png" alt="A bunch of Shine Muscat grapes" class="w-full" id="product-image" />
         </div>
       </div>
 
       <div class="absolute bottom-8 z-20 w-full px-12 text-orange-200">
         <div class="flex items-center justify-between">
-          <a href="#" class="tracking-wider hover:underline">Prev</a>
-          <div class="flex items-center gap-3">
-            <a href="#" class="block h-2 w-2 rounded-full bg-white"></a>
-            <a href="#" class="block h-2 w-2 rounded-full bg-white/40"></a>
-            <a href="#" class="block h-2 w-2 rounded-full bg-white/40"></a>
-          </div>
-          <a href="#" class="tracking-wider hover:underline">Next</a>
+          <a href="#" class="tracking-wider hover:underline" id="prev-product">Prev</a>
+          <div class="flex items-center gap-3" id="pagination-dots">
+            </div>
+          <a href="#" class="tracking-wider hover:underline" id="next-product">Next</a>
         </div>
       </div>
     </div>
@@ -109,7 +94,6 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
       </svg>
     </label>
-
     <ul class="menu text-center text-3xl text-orange-200 space-y-8">
       <li><a class="hover:underline decoration-2 underline-offset-8 hover:decoration-[#E5CBA0]">HOME</a></li>
       <li><a class="hover:underline decoration-2 underline-offset-8 hover:decoration-[#E5CBA0]">PRODUCTS</a></li>
@@ -119,6 +103,7 @@
     </ul>
   </div>
 
-</body>
+<script src="script.js"></script>
 
+</body>
 </html>
