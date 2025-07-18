@@ -35,35 +35,33 @@
       <div class="hero-overlay bg-black bg-opacity-70"></div>
 
       <div class="navbar absolute top-0 z-20 bg-transparent text-white/80">
-        <div class="navbar-start">
-          <label for="menu-toggle" class="btn btn-ghost lg:hidden text-orange-200">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
-          </label>
-          <a class="btn btn-ghost text-2xl font-cormorant text-orange-200">SANUKI FARM</a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 text-sm tracking-widest text-orange-200">
-            <li><a href="#home"
-                class="hover:underline decoration-2 underline-offset-4 hover:decoration-[#E5CBA0]">HOME</a></li>
-            <li><a href="#products"
-                class="hover:underline decoration-2 underline-offset-4 hover:decoration-[#E5CBA0]">PRODUCTS</a></li>
-            <li><a href="#gallery"
-                class="hover:underline decoration-2 underline-offset-4 hover:decoration-[#E5CBA0]">GALLERY</a></li>
-            <li><a href="#contact"
-                class="hover:underline decoration-2 underline-offset-4 hover:decoration-[#E5CBA0]">CONTACT</a></li>
-            <li><a href="#about"
-                class="hover:underline decoration-2 underline-offset-4 hover:decoration-[#E5CBA0]">ABOUT US</a></li>
-          </ul>
-        </div>
-        <div class="navbar-end">
-          <button class="btn btn-ghost btn-circle">
-            <i class="fa-solid fa-cart-shopping text-lg text-orange-200"></i>
-          </button>
-        </div>
-      </div>
+  <div class="navbar-start">
+    <label for="menu-toggle" class="btn btn-ghost lg:hidden text-orange-200">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+      </svg>
+    </label>
+    <a href="#home" class="btn btn-ghost text-2xl font-cormorant text-orange-200 hidden lg:flex">SANUKI FARM</a>
+  </div>
+
+  <div class="navbar-center">
+    <a href="#home" class="btn btn-ghost text-2xl font-cormorant text-orange-200 lg:hidden">SANUKI FARM</a>
+    <ul class="menu menu-horizontal px-1 text-sm tracking-widest text-orange-200 hidden lg:flex">
+      <li><a href="#home" class="hover:underline decoration-2 underline-offset-4 hover:decoration-[#E5CBA0]">HOME</a></li>
+      <li><a href="#products" class="hover:underline decoration-2 underline-offset-4 hover:decoration-[#E5CBA0]">PRODUCTS</a></li>
+      <li><a href="#gallery" class="hover:underline decoration-2 underline-offset-4 hover:decoration-[#E5CBA0]">GALLERY</a></li>
+      <li><a href="#contact" class="hover:underline decoration-2 underline-offset-4 hover:decoration-[#E5CBA0]">CONTACT</a></li>
+      <li><a href="#about" class="hover:underline decoration-2 underline-offset-4 hover:decoration-[#E5CBA0]">ABOUT US</a></li>
+    </ul>
+  </div>
+
+  <div class="navbar-end">
+    <button class="btn btn-ghost btn-circle">
+      <i class="fa-solid fa-cart-shopping text-lg text-orange-200"></i>
+    </button>
+  </div>
+</div>
 
       <div class="relative z-10 grid w-full max-w-7xl grid-cols-1 items-center gap-12 px-8 lg:grid-cols-2">
         <div class="text-left text-white transition-opacity duration-500 ease-in-out" id="product-text-container">
