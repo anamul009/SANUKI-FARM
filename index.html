@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SANUKI FARM</title>
   <link rel="stylesheet" href="style.css">
+
   <script src="https://kit.fontawesome.com/62af192729.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -15,7 +16,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Noto+Sans+JP:wght@400;700&display=swap"
     rel="stylesheet" />
-
 
 </head>
 
@@ -46,11 +46,16 @@
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1 text-sm tracking-widest text-orange-200">
-            <li><a class="hover:underline decoration-2 underline-offset-4 hover:decoration-[#E5CBA0]">HOME</a></li>
-            <li><a class="hover:underline decoration-2 underline-offset-4 hover:decoration-[#E5CBA0]">PRODUCTS</a></li>
-            <li><a class="hover:underline decoration-2 underline-offset-4 hover:decoration-[#E5CBA0]">GALLERY</a></li>
-            <li><a class="hover:underline decoration-2 underline-offset-4 hover:decoration-[#E5CBA0]">CONTACT</a></li>
-            <li><a class="hover:underline decoration-2 underline-offset-4 hover:decoration-[#E5CBA0]">ABOUT US</a></li>
+            <li><a href="#home"
+                class="hover:underline decoration-2 underline-offset-4 hover:decoration-[#E5CBA0]">HOME</a></li>
+            <li><a href="#products"
+                class="hover:underline decoration-2 underline-offset-4 hover:decoration-[#E5CBA0]">PRODUCTS</a></li>
+            <li><a href="#gallery"
+                class="hover:underline decoration-2 underline-offset-4 hover:decoration-[#E5CBA0]">GALLERY</a></li>
+            <li><a href="#contact"
+                class="hover:underline decoration-2 underline-offset-4 hover:decoration-[#E5CBA0]">CONTACT</a></li>
+            <li><a href="#about"
+                class="hover:underline decoration-2 underline-offset-4 hover:decoration-[#E5CBA0]">ABOUT US</a></li>
           </ul>
         </div>
         <div class="navbar-end">
@@ -63,16 +68,20 @@
       <div class="relative z-10 grid w-full max-w-7xl grid-cols-1 items-center gap-12 px-8 lg:grid-cols-2">
         <div class="text-left text-white transition-opacity duration-500 ease-in-out" id="product-text-container">
           <p class="mb-4 text-lg" id="product-pretitle">贅沢な一粒をどうぞ。</p>
-          <h1 class="font-cormorant mb-6 text-7xl font-bold md:text-8xl text-orange-200" id="product-name">シャインマスカット</h1>
+          <h1 class="font-cormorant mb-6 text-7xl font-bold md:text-8xl text-orange-200" id="product-name">シャインマスカット
+          </h1>
           <p class="mb-10 max-w-lg leading-relaxed" id="product-description">
             果汁たっぷりで濃厚な甘さが特徴です。 一粒食べれば口いっぱいに広がる芳醇な香りとジューシーな味わい。
           </p>
           <div class="flex flex-wrap gap-4">
-            <button class="btn btn-outline border-orange-200 text-white hover:bg-orange-200 hover:text-green-900">ORDER NOW</button>
-            <button class="btn btn-outline border-orange-200 text-white hover:bg-orange-200 hover:text-green-900">MORE INFO</button>
+            <button class="btn btn-outline border-orange-200 text-white hover:bg-orange-200 hover:text-green-900">ORDER
+              NOW</button>
+            <button class="btn btn-outline border-orange-200 text-white hover:bg-orange-200 hover:text-green-900">MORE
+              INFO</button>
           </div>
         </div>
-        <div class="hidden items-center justify-center lg:flex transition-opacity duration-500 ease-in-out" id="product-image-container">
+        <div class="hidden items-center justify-center lg:flex transition-opacity duration-500 ease-in-out"
+          id="product-image-container">
           <img src="img/img (2).png" alt="A bunch of Shine Muscat grapes" class="w-full" id="product-image" />
         </div>
       </div>
@@ -81,7 +90,7 @@
         <div class="flex items-center justify-between">
           <a href="#" class="tracking-wider hover:underline" id="prev-product">Prev</a>
           <div class="flex items-center gap-3" id="pagination-dots">
-            </div>
+          </div>
           <a href="#" class="tracking-wider hover:underline" id="next-product">Next</a>
         </div>
       </div>
@@ -95,15 +104,110 @@
       </svg>
     </label>
     <ul class="menu text-center text-3xl text-orange-200 space-y-8">
-      <li><a class="hover:underline decoration-2 underline-offset-8 hover:decoration-[#E5CBA0]">HOME</a></li>
-      <li><a class="hover:underline decoration-2 underline-offset-8 hover:decoration-[#E5CBA0]">PRODUCTS</a></li>
-      <li><a class="hover:underline decoration-2 underline-offset-8 hover:decoration-[#E5CBA0]">GALLERY</a></li>
-      <li><a class="hover:underline decoration-2 underline-offset-8 hover:decoration-[#E5CBA0]">CONTACT</a></li>
-      <li><a class="hover:underline decoration-2 underline-offset-8 hover:decoration-[#E5CBA0]">ABOUT US</a></li>
+      <li><a href="#home" class="hover:underline decoration-2 underline-offset-8 hover:decoration-[#E5CBA0]">HOME</a>
+      </li>
+      <li><a href="#products"
+          class="hover:underline decoration-2 underline-offset-8 hover:decoration-[#E5CBA0]">PRODUCTS</a></li>
+      <li><a href="#gallery"
+          class="hover:underline decoration-2 underline-offset-8 hover:decoration-[#E5CBA0]">GALLERY</a></li>
+      <li><a href="#contact"
+          class="hover:underline decoration-2 underline-offset-8 hover:decoration-[#E5CBA0]">CONTACT</a></li>
+      <li><a href="#about" class="hover:underline decoration-2 underline-offset-8 hover:decoration-[#E5CBA0]">ABOUT
+          US</a></li>
+    </ul>
+  </div>
+
+
+  <section id="gallery" class="relative mt-16 py-20 px-4 sm:px-6 lg:px-8 scroll-mt-20">
+
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('img/garden.jpg');"></div>
+    <div class="absolute inset-0 bg-[#0A140F]/80"></div>
+
+    <div class="relative z-10 container mx-auto">
+
+      <div class="text-center mb-16">
+        <h2
+          class="text-4xl md:text-5xl font-cormorant text-orange-200 inline-block pb-3 border-b-2 border-orange-200/50">
+          Our Gallery
+        </h2>
+      </div>
+
+      <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+        <div
+          class="p-1.5 bg-white/5 border border-white/10 rounded-2xl shadow-lg hover:border-orange-200/40 transition-colors duration-300">
+          <div class="overflow-hidden rounded-xl aspect-[4/5]">
+            <img src="img/bg-3.jpg" alt="Gallery Image 1"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out">
+          </div>
+        </div>
+
+        <div
+          class="p-1.5 bg-white/5 border border-white/10 rounded-2xl shadow-lg hover:border-orange-200/40 transition-colors duration-300">
+          <div class="overflow-hidden rounded-xl aspect-[4/5]">
+            <img src="img/bg-4.jpg" alt="Gallery Image 2"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out">
+          </div>
+        </div>
+
+        <div
+          class="p-1.5 bg-white/5 border border-white/10 rounded-2xl shadow-lg hover:border-orange-200/40 transition-colors duration-300">
+          <div class="overflow-hidden rounded-xl aspect-[4/5]">
+            <img src="img/bg-5.jpg" alt="Gallery Image 3"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out">
+          </div>
+        </div>
+
+        <div
+          class="p-1.5 bg-white/5 border border-white/10 rounded-2xl shadow-lg hover:border-orange-200/40 transition-colors duration-300">
+          <div class="overflow-hidden rounded-xl aspect-[4/5]">
+            <img src="img/bg-10.jpg" alt="Gallery Image 4"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out">
+          </div>
+        </div>
+
+        <div
+          class="p-1.5 bg-white/5 border border-white/10 rounded-2xl shadow-lg hover:border-orange-200/40 transition-colors duration-300">
+          <div class="overflow-hidden rounded-xl aspect-[4/5]">
+            <img src="img/bg-1.png" alt="Gallery Image 5"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out">
+          </div>
+        </div>
+
+        <div
+          class="p-1.5 bg-white/5 border border-white/10 rounded-2xl shadow-lg hover:border-orange-200/40 transition-colors duration-300">
+          <div class="overflow-hidden rounded-xl aspect-[4/5]">
+            <img src="img/bg-7.jpg" alt="Gallery Image 6"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300 ease-in-out">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="fullscreen-menu lg:hidden">
+    <label for="menu-toggle" class="btn btn-ghost btn-circle absolute top-4 right-4 text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </label>
+    <ul class="menu text-center text-3xl text-orange-200 space-y-8">
+      <li><a href="#home" class="hover:underline decoration-2 underline-offset-8 hover:decoration-[#E5CBA0]">HOME</a>
+      </li>
+      <li><a href="#products"
+          class="hover:underline decoration-2 underline-offset-8 hover:decoration-[#E5CBA0]">PRODUCTS</a></li>
+      <li><a href="#gallery"
+          class="hover:underline decoration-2 underline-offset-8 hover:decoration-[#E5CBA0]">GALLERY</a></li>
+      <li><a href="#contact"
+          class="hover:underline decoration-2 underline-offset-8 hover:decoration-[#E5CBA0]">CONTACT</a></li>
+      <li><a href="#about" class="hover:underline decoration-2 underline-offset-8 hover:decoration-[#E5CBA0]">ABOUT
+          US</a></li>
     </ul>
   </div>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>

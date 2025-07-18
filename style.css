@@ -1,3 +1,7 @@
+  /* Smooth scrolling for the whole page */
+  html {
+    scroll-behavior: smooth;
+  }
 
   /* Applying custom fonts */
   body {
@@ -30,7 +34,7 @@
 
   /* Styles for the background slideshow */
   .background-slideshow {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -46,7 +50,6 @@
     background-size: cover;
     background-position: center;
     opacity: 0;
-    filter: brightness(1.1);
     animation: image-fade 16s infinite;
   }
 
@@ -67,7 +70,6 @@
     animation-delay: 12s;
   }
 
-  /* Defines the fade-in and fade-out animation */
   @keyframes image-fade {
     0% { opacity: 0; }
     6% { opacity: 1; }
@@ -75,4 +77,3 @@
     31% { opacity: 0; }
     100% { opacity: 0; }
   }
-
